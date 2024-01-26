@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+* {
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.top input {
+    border-radius: 10px;
+}
+
+.bottom {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: aquamarine;
+    padding-left: 10px;
+}
+
+.content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.miscellaneous {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+}
+
+.announcements, .trending {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: minmax(100px, 250px);
+    align-self: center;
+}
